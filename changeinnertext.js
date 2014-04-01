@@ -10,7 +10,8 @@ if (Meteor.isClient) {
       $('input').val('');
     },
     'click #jquery': function () {
-      $('h1').text($('input').val());
+      document.getElementById('greeting').title = $('input').val();
+      document.getElementById('greeting').innerText = $('input').val();
       $('input').val('');
     }
   });
